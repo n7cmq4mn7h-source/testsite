@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="productTitle">Товар</title>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Товар</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="glass">
+        <div class="container header-container">
+            <h1>Магазин</h1>
+        </div>
+    </header>
 
-<header class="header">
-    <div class="container header-inner">
-        <h1>Мой Магазин</h1>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="index.html#catalog">Каталог</a>
-        </nav>
-    </div>
-</header>
+    <main class="container product-detail glass">
+        <h1 id="productTitle"></h1>
 
-<section class="product-page container">
-    <div class="product-layout">
-
-        <!-- Галерея -->
-        <div class="product-gallery">
-            <img id="mainImage" src="" alt="Товар">
-            <div id="detailImages" class="thumbs"></div>
+        <!-- Слайдер фотографий -->
+        <div id="slider" class="slider">
+            <button id="prev" class="slider-btn">&lt;</button>
+            <img id="sliderImage" src="" alt="Фото товара">
+            <button id="next" class="slider-btn">&gt;</button>
         </div>
 
-        <!-- Информация -->
-        <div class="product-info">
-            <h2 id="detailName"></h2>
-            <p id="detailDescription"></p>
-            <div class="price" id="detailPrice"></div>
-            <button id="buyButton">🛒 Купить</button>
+        <p id="detailDescription"></p>
+        <p id="detailPrice"></p>
+
+        <div class="product-buttons">
+            <button id="buyButton">Купить</button>
+            <button onclick="window.history.back()">Назад</button>
         </div>
+    </main>
 
-    </div>
-</section>
-
-
-<script src="product.js"></script>
-<script src="script.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>
-
 
 
