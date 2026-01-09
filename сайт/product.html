@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="productTitle">Товар</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <h1>Мой Магазин</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="index.html#catalog">Каталог</a>
+        </nav>
+    </div>
+</header>
+
+<section class="product-page container">
+    <div class="product-layout">
+
+        <!-- Галерея -->
+        <div class="product-gallery">
+            <img id="mainImage" src="" alt="Товар">
+            <div id="detailImages" class="thumbs"></div>
+        </div>
+
+        <!-- Информация -->
+        <div class="product-info">
+            <h2 id="detailName"></h2>
+            <p id="detailDescription"></p>
+            <div class="price" id="detailPrice"></div>
+            <button id="buyButton">🛒 Купить</button>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="product.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный сайт</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <header>
+        <div class="container">
+            <h1>My site</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#catalog">Catalog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="themeToggle">🌙</button>
+           <a href="cart.html" id="cartBtn" class="btn"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m40-240 20-80h220l-20 80H40Zm80-160 20-80h260l-20 80H120Zm623 240 20-160 29-240 10-79-59 479ZM240-80q-33 0-56.5-23.5T160-160h583l59-479H692l-11 85q-2 17-15 26.5t-30 7.5q-17-2-26.5-14.5T602-564l9-75H452l-11 84q-2 17-15 27t-30 8q-17-2-27-15t-8-30l9-74H220q4-34 26-57.5t54-23.5h80q8-75 51.5-117.5T550-880q64 0 106.5 47.5T698-720h102q36 1 60 28t19 63l-60 480q-4 30-26.5 49.5T740-80H240Zm220-640h159q1-33-22.5-56.5T540-800q-35 0-55.5 21.5T460-720Z"/></svg></a>
+
+    </div>
+</header>
+
+
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Добро пожаловать!</h2>
+            <p>Этот сайт создан с использованием HTML, CSS и JavaScript.</p>
+            <button class="btn" id="clickMe">Нажми меня!</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>О сайте</h2>
+            <p>Здесь вы можете добавить информацию о своих проектах, услугах или любом другом контенте.</p>
+        </div>
+    </section>
+
+
+    <!-- Каталог товаров -->
+    <section id="catalog">
+        <div class="container">
+            <h2>Каталог товаров</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/200?1" alt="Товар 1">
+                    <h3>Товар 1</h3>
+                    <p class="price">₴150</p> <!-- вот цена -->
+                    <button class="buy-btn">Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/200?2" alt="Товар 2">
+                    <h3>Товар 2</h3>
+                    <p class="price">₴150</p> <!-- вот цена -->
+                    <button class="buy-btn">Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/200?3" alt="Товар 3">
+                    <h3>Товар 3</h3>
+                    <p class="price">₴150</p> <!-- вот цена -->
+                    <button class="buy-btn">Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/200?4" alt="Товар 4">
+                    <h3>Товар 4</h3>
+                    <p class="price">₴150</p> <!-- вот цена -->
+                    <button class="buy-btn">Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/200?4" alt="Товар 5">
+                    <h3>Товар 5</h3>
+                    <p class="price">₴150</p> <!-- вот цена -->
+                    <button class="buy-btn">Купить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Мой Сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+  
+
+ 
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+
+</body>
+</html>
